@@ -85,6 +85,46 @@ public:
     }
 };
 
+class Igraonica{
+private:
+        List<Igracka*> igracke;
+public:
+    Igraonica() : igracke(){}
+    Igraonica(List<Igracka*> i){
+        igracke = i;
+    }
+    bool dodajIgracku(Igracka &i){
+        return igracke.add(igracke.size()+1,&i);
+    }
+    bool baciIgracku(int n){
+        for(int i = 1; i <= igracke.size();i++){
+            if(n == i){
+                igracke.remove(n);
+                return true;
+            }
+
+        }
+        return false;
+    }
+    bool nadjiIgracku(DinString n){
+        Igracka ig;
+        for(int i = 1;i <= igracke.size();i++){
+            if(n == ig.get_naziv()){
+                    return true;
+               }
+        }
+        return false;
+    }
+    void ispis()const{
+        int br = 0;
+        for(int i = 1;i <= igracke.size();i++){
+            br++;
+        }
+        cout << "broj igracaka:"<< br<<endl;
+
+    }
+};
+
 int main()
 {   cout << "IGRACKE IGRACKE IGRACKE IGRACKE" << endl<<endl<<endl;
     Igracka i1();
@@ -99,5 +139,21 @@ int main()
     Autic a2("brmbrm","5-15",true);
     Autic a;
     a.ispis();
+
+    List<Igracka*> ig;
+    Igraonica();
+
+    Igraonica igra;
+    igra.dodajIgracku(i2);
+    if(igra.nadjiIgracku("brao")){
+        cout << "pronadjena\n";
+    }
+    igra.ispis();
+    if(igra.baciIgracku(1)){
+
+        cout << "izbrisana\n";
+    }
+    igra.ispis();
+
     return 0;
 }
