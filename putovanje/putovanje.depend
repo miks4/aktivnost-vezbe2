@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1588941989 source:c:\users\win10\documents\github\aktivnost-vezbe2\putovanje\dinstring.cpp
+	"dinstring.hpp"
+
+1588942023 c:\users\win10\documents\github\aktivnost-vezbe2\putovanje\dinstring.hpp
+	<iostream>
+
+1588946532 source:c:\users\win10\documents\github\aktivnost-vezbe2\putovanje\main.cpp
+	<iostream>
+	"dinString.hpp"
+	"list.hpp"
+
+1588943356 c:\users\win10\documents\github\aktivnost-vezbe2\putovanje\list.hpp
+	<stdlib.h>
+	<iostream>
+
