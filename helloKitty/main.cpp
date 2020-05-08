@@ -87,19 +87,19 @@ public:
 
 class Igraonica{
 private:
-        List<Igracka*> igracke;
+        List<Igracka> *igracke;
 public:
     Igraonica() : igracke(){}
-    Igraonica(List<Igracka*> i){
+    Igraonica(List<Igracka> *i){
         igracke = i;
     }
     bool dodajIgracku(Igracka &i){
-        return igracke.add(igracke.size()+1,&i);
+        return igracke->add((igracke->size())+1,i);
     }
     bool baciIgracku(int n){
-        for(int i = 1; i <= igracke.size();i++){
+        for(int i = 1; i <= igracke->size();i++){
             if(n == i){
-                igracke.remove(n);
+                igracke->remove(n);
                 return true;
             }
 
@@ -108,7 +108,8 @@ public:
     }
     bool nadjiIgracku(DinString n){
         Igracka ig;
-        for(int i = 1;i <= igracke.size();i++){
+        for(int i = 1;i <= igracke->size();i++){
+            igracke->read(i,ig);
             if(n == ig.get_naziv()){
                     return true;
                }
@@ -117,11 +118,16 @@ public:
     }
     void ispis()const{
         int br = 0;
-        for(int i = 1;i <= igracke.size();i++){
+        for(int i = 1;i <= igracke->size();i++){
             br++;
         }
         cout << "broj igracaka:"<< br<<endl;
-
+        Igracka ig;
+        for(int i = 1;i <= igracke->size();i++){
+            igracke->read(i,ig);
+            cout << "Naziv: " << ig.get_naziv()<<endl;
+            cout << "Opseg godina: " << ig.get_opsegGod()<<endl;
+        }
     }
 };
 
