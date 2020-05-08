@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1588947448 source:c:\users\win10\documents\github\aktivnost-vezbe2\hellokitty\dinstring.cpp
+	"dinstring.hpp"
+
+1588947448 c:\users\win10\documents\github\aktivnost-vezbe2\hellokitty\dinstring.hpp
+	<iostream>
+
