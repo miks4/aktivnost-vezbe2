@@ -32,6 +32,9 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="dinstring.cpp" />
+		<Unit filename="dinstring.hpp" />
+		<Unit filename="list.hpp" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />
