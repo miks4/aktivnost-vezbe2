@@ -5,3 +5,12 @@
 1589318722 c:\users\win10\documents\github\aktivnost-vezbe2\pozoriste\dinstring.hpp
 	<iostream>
 
+1589471988 source:c:\users\win10\documents\github\aktivnost-vezbe2\pozoriste\main.cpp
+	<iostream>
+	"dinstring.hpp"
+	"list.hpp"
+
+1589318722 c:\users\win10\documents\github\aktivnost-vezbe2\pozoriste\list.hpp
+	<stdlib.h>
+	<iostream>
+
