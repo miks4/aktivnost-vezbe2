@@ -44,7 +44,7 @@ class Stack{
 private:
     typedef struct pod{
         int duzina[D];
-        T el;
+        T* el;
     }podatak;
     int maxi;
 public:
@@ -84,7 +84,7 @@ public:
         else{
             for(int i = 0;i <=D;i++){
                 if(i == D){
-                    el = t;
+
                     D++;
                     return true;
                 }
