@@ -27,6 +27,7 @@ public:
     void set_cena(const int c){
         cena = c;
     }
+    
     void set_naziv(const DinString d){
         naziv = d;
     }
